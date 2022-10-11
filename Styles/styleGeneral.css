@@ -1,5 +1,6 @@
 html {
-    height: 100%;
+    height: auto;
+    min-height: 100%;
 }
 
 body {
@@ -31,7 +32,7 @@ section div {
     padding-top: 10px;
 }
 
-a {
+.col a {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -49,31 +50,24 @@ a {
     overflow-x: none;
   }
   /*  ::-webkit- is for chrome */
-  .scrollbar ::-webkit-scrollbar {
+  ::-webkit-scrollbar {
    
     height:10px;
     width: 1.2em;
     overflow-x: none;
   }
-  .scrollbar  ::-webkit-scrollbar-track { 
+  ::-webkit-scrollbar-track { 
     margin: 25px ;
     background-color: #242942;
     margin-block: 0.25em;
     border-radius: 15px;
   }
-  .scrollbar ::-webkit-scrollbar-thumb {
+  ::-webkit-scrollbar-thumb {
     background: #00c6ff;
     background: -webkit-linear-gradient(to right, #03dff8, #ffff00);
     background: linear-gradient(to right, #03dff8, #ffff00);
     border-radius: 15px;
   }
-
-
-
-  
-
-
-
 
 
 
@@ -122,7 +116,7 @@ a {
     }
 
     main {
-        padding: 20px;
+        padding: 0 20px;
     }
 }
 
