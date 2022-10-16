@@ -9,9 +9,9 @@ function UniteStrings(){
 
         x = parseInt(x);
         y = parseInt(y);
-        alert(x)
 
-        if(x == NaN || y == NaN) throw new Error(err);
+
+        if(Number.isNaN(x) || Number.isNaN(y)) throw new Error(err);
 
         if(x < y) result = y + " es mayor que " + x;
             
